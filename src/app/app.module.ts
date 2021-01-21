@@ -72,12 +72,6 @@ import {
     CalendarModule
   ],
   declarations: [AppComponent],
-  providers: [
-    {
-      provide: LibraryService,
-      useClass: LibraryServiceMock
-    }
-  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
