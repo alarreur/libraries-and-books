@@ -21,9 +21,3 @@ Make the necessary changes to the project so that the **whole application** is i
 Now that we have a mock service setup, we would like to display the list of libraries' ids and names in a table. While fetching the data we want the table to display a loader.
 
 Make the necessary changes in [app.component.ts](./src/app/app.component.ts) and [app.component.html](./src/app/app.component.html) to fetch the libray list from the service mock and display the result in the table.
-
-### Question 3: Number of books
-
-We want to display the number of books each library has in the existing table. 
-
-Make the necessary changes in [app.component.ts](./src/app/app.component.ts) and [app.component.html](./src/app/app.component.html) to display the number of books per library.

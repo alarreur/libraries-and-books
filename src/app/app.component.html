@@ -12,7 +12,6 @@
 			<tr>
 				<th>Id</th>
 				<th>Name</th>
-				<th># of Books</th>
 			</tr>
 		</thead>
 		<ng-container *ngIf="(libraries$ | async) as libraries; else loading">
@@ -20,7 +19,6 @@
 				<tr *ngFor="let library of libraries; index as i">
 					<td>{{library.id}}</td>
 					<td>{{library.name}}</td>
-					<td class="library-nb-books"></td>
 				</tr>
 			</tbody>
 		</ng-container>
@@ -29,6 +27,6 @@
 
 <ng-template #loading>
 	<tr>
-		<td colspan="3">Loading Library list...</td>
+		<td colspan="2">Loading Library list...</td>
 	</tr>
 </ng-template>

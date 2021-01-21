@@ -2,8 +2,7 @@
 import { Component } from "@angular/core";
 
 // rxjs
-import { forkJoin, Observable } from "rxjs";
-import { map, switchMap } from "rxjs/operators";
+import { Observable } from "rxjs";
 
 // local
 import { LibraryService } from "./services";
@@ -20,9 +19,7 @@ export class AppComponent {
   libraries$: Observable<Library[]>;
   totalBooks$: Observable<number>;
 
-  constructor(private readonly libraryService: LibraryService) {
-    this.libraries$ = libraryService.getlibraryList();
-  }
+  constructor(private readonly libraryService: LibraryService) {}
 
   ngOnInit() {}
 }
