@@ -21,23 +21,7 @@ export class AppComponent {
   totalBooks$: Observable<number>;
 
   constructor(private readonly libraryService: LibraryService) {
-    this.libraries$ = libraryService.getlibraryList().pipe(
-      switchMap(libraries =>
-        forkJoin(
-          libraries.map(library =>
-            this.libraryService.getBooksForLibrary(library.id).pipe(
-              map(
-                books =>
-                  <Library>{
-                    ...library,
-                    books
-                  }
-              )
-            )
-          )
-        )
-      )
-    );
+    this.libraries$ = libraryService.getlibraryList();
   }
 
   ngOnInit() {}

@@ -27,9 +27,3 @@ Make the necessary changes in [app.component.ts](./src/app/app.component.ts) and
 We want to display the number of books each library has in the existing table. 
 
 Make the necessary changes in [app.component.ts](./src/app/app.component.ts) and [app.component.html](./src/app/app.component.html) to display the number of books per library.
-
-### Question 4: Total number of books
-
-We want to display the total number of books for every library in the existing table. 
-
-Make the necessary changes in [app.component.ts](./src/app/app.component.ts) and [app.component.html](./src/app/app.component.html) to display the total number of books in the table footer.

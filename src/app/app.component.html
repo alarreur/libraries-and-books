@@ -20,15 +20,9 @@
 				<tr *ngFor="let library of libraries; index as i">
 					<td>{{library.id}}</td>
 					<td>{{library.name}}</td>
-					<td class="library-nb-books">{{library.books?.length}}</td>
+					<td class="library-nb-books"></td>
 				</tr>
 			</tbody>
-			<tfoot>
-				<tr>
-					<td colspan="2">Total Books</td>
-					<td></td>
-				</tr>
-			</tfoot>
 		</ng-container>
 	</table>
 </div>
