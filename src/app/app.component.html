@@ -1,0 +1,40 @@
+<div>
+	<h1>Library list</h1>
+
+	<table>
+		<caption>Number of books per library</caption>
+		<colgroup>
+			<col class="library-id">
+			<col class="library-name">
+			<col class="library-nb-books">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th># of Books</th>
+			</tr>
+		</thead>
+		<ng-container *ngIf="(libraries$ | async) as libraries; else loading">
+			<tbody>
+				<tr *ngFor="let library of libraries; index as i">
+					<td>{{library.id}}</td>
+					<td>{{library.name}}</td>
+					<td class="library-nb-books">{{library.books?.length}}</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2">Total Books</td>
+					<td>{{totalBooks$ | async }}</td>
+				</tr>
+			</tfoot>
+		</ng-container>
+	</table>
+</div>
+
+<ng-template #loading>
+	<tr>
+		<td colspan="3">Loading Library list...</td>
+	</tr>
+</ng-template>

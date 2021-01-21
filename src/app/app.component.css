@@ -1,0 +1,42 @@
+p {
+  font-family: Lato;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(100, 100, 100);
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: 0.7rem;
+}
+
+td,
+th {
+  border: 1px solid rgb(100, 100, 100);
+  padding: 10px 10px;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+td {
+  text-align: center;
+}
+
+caption {
+  padding: 8px;
+  caption-side: bottom;
+}
+
+.library-id {
+  width: 50px;
+}
+
+.library-name {
+  width: 150px;
+}
+
+.library-nb-books {
+  width: 50px;
+}
