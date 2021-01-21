@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 
 // rxjs
 import { forkJoin, Observable } from "rxjs";
-import { map, shareReplay, switchMap } from "rxjs/operators";
+import { map, switchMap } from "rxjs/operators";
 
 // local
 import { LibraryService } from "./services";
@@ -35,17 +35,6 @@ export class AppComponent {
               )
             )
           )
-        )
-      ),
-      shareReplay(1)
-    );
-
-    this.totalBooks$ = this.libraries$.pipe(
-      map(libraries =>
-        libraries.reduce(
-          (total, library) =>
-            library.books ? total + library.books.length : total,
-          0
         )
       )
     );
