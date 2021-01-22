@@ -4,7 +4,11 @@
 
 This exercise aims at displaying a list of libraries with their associated number of books.
 
-This project is [available for edition on StackBlitz ⚡️](https://stackblitz.com/edit/libraries-and-books) and each question is available via a dedicated branch of the project.
+This project is available for edition on [⚡️ StackBlitz](https://stackblitz.com/github/alarreur/libraries-and-books). Each question has a specific branch. To complete the exercise, go through each question by navigating the project with the following links/branches:
+* ⚡️ [question 1](https://stackblitz.com/github/alarreur/libraries-and-books/tree/q1)
+* ⚡️ [question 2](https://stackblitz.com/github/alarreur/libraries-and-books/tree/q2)
+* ⚡️ [question 3](https://stackblitz.com/github/alarreur/libraries-and-books/tree/q3)
+* ⚡️ [question 4](https://stackblitz.com/github/alarreur/libraries-and-books/tree/q4)
 
 
 ## Questions
